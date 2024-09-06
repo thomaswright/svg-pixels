@@ -1,0 +1,21 @@
+[package]
+name = "svg-pixels"
+version = "0.1.0"
+edition = "2021"
+authors = ["Thomas Wright"]
+license = "MIT"
+description = "A PNG to SVG per pixel converter"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+image = "0.25.2"
+clap = { version = "4.4", features = ["derive"] }
+
+[package.metadata.docs.rs]
+targets = [
+  "x86_64-unknown-linux-gnu",
+  "x86_64-pc-windows-msvc",
+  "x86_64-apple-darwin",
+  "aarch64-apple-darwin",
+]
